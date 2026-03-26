@@ -59,10 +59,11 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 18px;
+  border: 1px solid #d7def7;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f7ff 100%);
+  box-shadow: 0 12px 24px rgba(26, 35, 126, 0.08);
 }
 
 .activity-card h4 {
@@ -72,6 +73,93 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.activity-meta {
+  color: #344054;
+}
+
+.participants-section {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background-color: rgba(26, 35, 126, 0.05);
+  border: 1px solid rgba(26, 35, 126, 0.1);
+}
+
+.participants-heading {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a237e;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.participants-list {
+  margin: 0;
+  padding-left: 0;
+  color: #24324a;
+  list-style: none;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background-color: rgba(0, 102, 204, 0.03);
+  transition: background-color 0.15s ease;
+}
+
+.participants-list li:hover {
+  background-color: rgba(255, 0, 0, 0.05);
+}
+
+.participants-list li:last-child {
+  margin-bottom: 0;
+}
+
+.participant-email {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.participant-delete {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid #ef5350;
+  border-radius: 4px;
+  color: #ef5350;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.participant-delete:hover {
+  background-color: #ef5350;
+  color: white;
+  transform: scale(1.05);
+}
+
+.participant-delete:active {
+  transform: scale(0.95);
+}
+
+.participants-empty {
+  list-style: none;
+  color: #667085;
+  font-style: italic;
+  padding: 6px 8px;
 }
 
 .form-group {
